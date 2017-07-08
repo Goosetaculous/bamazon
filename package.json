@@ -1,0 +1,29 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Amazon-like app written in nodejs and a database of MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bamazonCustomer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goosetaculous/bamazon.git"
+  },
+  "keywords": [
+    "UCSD"
+  ],
+  "author": "Goose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Goosetaculous/bamazon/issues"
+  },
+  "homepage": "https://github.com/Goosetaculous/bamazon#readme",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^3.1.1",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
