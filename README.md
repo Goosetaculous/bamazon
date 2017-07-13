@@ -1,7 +1,8 @@
 # bamazon
 
 Amazon-like storefront with NODEJS and MySQL. User can pretend as a custom, manager 
-and supervisor by running js file
+and supervisor by running js file.  MySql is hosted at a hostgator server.  Feel free to clone and run the app. 
+See usage below.  Video is included
 
 ## Installation 
 

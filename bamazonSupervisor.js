@@ -110,7 +110,7 @@ function productSales(callback){
         "p.product_sales as productSales," +
         "p.product_sales - over_head_costs as profit " +
         "FROM departments AS dp " +
-        "LEFT JOIN products p ON p.department_name = dp.department_name GROUP BY dp.department_name"
+        "RIGHT JOIN products p ON p.department_name = dp.department_name GROUP BY dp.department_name"
     connection.query(query, function (error, results, fields) {
         if (error) throw error;
         displayResults(results)

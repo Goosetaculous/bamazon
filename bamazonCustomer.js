@@ -6,6 +6,7 @@ var mysql      =  require('mysql')
 var credentials =  require('./connection')
 var Table = require('cli-table');
 var connection =  mysql.createConnection(credentials.con)
+const chalk = require('chalk');
 
 //INITIALIZE THE CONNECTION
 connection.connect((err)=>{
@@ -17,7 +18,7 @@ connection.connect((err)=>{
 })
 
 function userPrompt(){
-    console.log("WELCOME TO BAMAZON!")
+    console.log(chalk.green("WELCOME TO BAMAZON!"))
     var questions = [
         {
         name: 'productid',
